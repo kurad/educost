@@ -14,29 +14,7 @@
       <meta name="description" content="">
       <meta name="author" content="">
       <!-- site icon -->
-      <link rel="icon" href="{{ asset('assets/2/images/fevicon.png') }}" type="image/png" />
-      <!-- bootstrap css -->
-      <link rel="stylesheet" href="{{ asset('assets/2/css/bootstrap.min.css') }}" />
-      <!-- site css -->
-      <link rel="stylesheet" href="{{ asset('assets/2/style.css') }}" />
-      <!-- responsive css -->
-      <link rel="stylesheet" href="{{ asset('assets/2/css/responsive.css') }}" />
-      <!-- color css -->
-      <link rel="stylesheet" href="{{ asset('assets/2/css/colors.css') }}" />
-      <!-- select bootstrap -->
-      <link rel="stylesheet" href="{{ asset('assets/2/css/bootstrap-select.css') }}" />
-      <!-- scrollbar css -->
-      <link rel="stylesheet" href="{{ asset('assets/2/css/perfect-scrollbar.css') }}" />
-      <!-- custom css -->
-      <link rel="stylesheet" href="{{ asset('assets/2/css/custom.css') }}" />
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="{{asset('assets/js/tinymce/tinymce.min.js') }}"></script>
-      <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-      <![endif]-->
+      @include("layouts.css")
    </head>
    <body class="dashboard dashboard_1">
       <div class="full_container">
@@ -60,113 +38,8 @@
                      </div>
                   </div>
                </div>
-               <div class="sidebar_blog_2">
-                  <h4>General</h4>
-                  <ul class="list-unstyled components">
-                    @if(Auth::user()->role_id==1)
-                     <li><a href="{{route('dashboard')}}"><i class="fa fa-clock-o orange_color"></i> <span>Dashboard</span></a></li>
-                     <li>
-                        <a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-tasks yellow_color"></i> <span>Teaching Aids</span></a>
-                        <ul class="collapse list-unstyled" id="dashboard">
-                           <li>
-                              <a href="{{route('videos')}}">> <span>Videos</span></a>
-                           </li>
-                           <li>
-                              <a href="#">> <span>Simulations</span></a>
-                           </li>
-                           <li>
-                              <a href="#">> <span>Charts</span></a>
-                           </li>
-                        </ul>
-                     </li>
-                     <li>
-                        <a href="#element" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-file purple_color"></i> <span>Course Material</span></a>
-                        <ul class="collapse list-unstyled" id="element">
-                           <li><a href="#">> <span>Notes</span></a></li>
-                           <li><a href="#">> <span>Experiments</span></a></li>
-                           <li><a href="#">> <span>Video Tutorials</span></a></li>
-                           <li><a href="#">> <span>Virtual field trips</span></a></li>
-                        </ul>
-                     </li>
-                     
-                     <li><a href="{{route('all_questions')}}"><i class="fa fa-question-circle purple_color2"></i> <span>Questions & Answers</span></a></li>
-                     <li><a href="#"><i class="fa fa-question purple_color2"></i> <span>Online Quizzes</span></a></li>
-                     <li >
-                        <a href="#ebook" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-book yellow_color"></i> <span>EBook</span></a>
-                        <ul class="collapse list-unstyled" id="ebook">
-                           <li>
-                              <a href="#"> <span>PDF</span></a>
-                           </li>
-                           <li>
-                              <a href="#">> <span>Audio</span></a>
-                           </li>
-                        </ul>
-                     </li>
-                     <li>
-                        <a href="#settings" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-gear yellow_color"></i> <span>Settings</span></a>
-                        <ul class="collapse list-unstyled" id="settings">
-                           <li>
-                              <a href="{{route('levels')}}">> <span>Levels</span></a>
-                           </li>
-                           <li>
-                              <a href="{{route('subjects')}}">> <span>Subjects</span></a>
-                           </li>
-                           <li>
-                              <a href="{{route('units')}}">> <span>Units</span></a>
-                           </li>
-                           <li>
-                              <a href="{{route('lessons')}}">> <span>Lessons</span></a>
-                           </li>
-                        </ul>
-                     </li>
-                     <li><a href="#"><i class="fa fa-user purple_color2"></i> <span>Users Management</span></a></li>
-                     @endif
-
-                    @if(Auth::user()->role_id==2)
-                     <li><a href="#"><i class="fa fa-clock-o orange_color"></i> <span>Dashboard</span></a></li>
-                     <li class="active">
-                        <a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-tasks yellow_color"></i> <span>Teaching Aids</span></a>
-                        <ul class="collapse list-unstyled" id="dashboard">
-                           <li>
-                              <a href="dashboard.html">> <span>Videos</span></a>
-                           </li>
-                           <li>
-                              <a href="dashboard_2.html">> <span>Simulations</span></a>
-                           </li>
-                           <li>
-                              <a href="dashboard_2.html">> <span>Charts</span></a>
-                           </li>
-                        </ul>
-                     </li>
-                     <li>
-                        <a href="#element" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-file purple_color"></i> <span>Course Material</span></a>
-                        <ul class="collapse list-unstyled" id="element">
-                           <li><a href="general_elements.html">> <span>Notes</span></a></li>
-                           <li><a href="media_gallery.html">> <span>Experiments</span></a></li>
-                           <li><a href="icons.html">> <span>Video Tutorials</span></a></li>
-                           <li><a href="invoice.html">> <span>Virtual field trips</span></a></li>
-                        </ul>
-                     </li>
-                     
-                     <li><a href="{{route('teacher.all_questions')}}"><i class="fa fa-question-circle purple_color2"></i> <span>Questions & Answers</span></a></li>
-                     <li><a href=""><i class="fa fa-question purple_color2"></i> <span>Online Quizzes</span></a></li>
-                     <li class="active">
-                        <a href="#additional_page" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-clone yellow_color"></i> <span>EBook</span></a>
-                        <ul class="collapse list-unstyled" id="additional_page">
-                           <li>
-                              <a href="profile.html"> <span>PDF</span></a>
-                           </li>
-                           <li>
-                              <a href="project.html">> <span>Audio</span></a>
-                           </li>
-                        </ul>
-                     </li>
-                     @endif
-                  </ul>
-               </div>
+               @include("layouts.navigation")
             </nav>
-            <!-- end sidebar -->
-            <!-- right content -->
             <div id="content">
                <!-- topbar -->
                <div class="topbar">
@@ -175,7 +48,6 @@
                         <button type="button" id="sidebarCollapse" class="sidebar_toggle"><i class="fa fa-bars"></i></button>
                         <div class="logo_section">
                            <a href="index.html"><img class="img-responsive" src="{{asset('assets/2/images/logo/educost_logo.png')}}" alt="#" /></a>
-
                         </div>
                         <div class="right_topbar">
                            <div class="icon_info">
@@ -207,28 +79,6 @@
             </div>
          </div>
       </div>
-      <!-- jQuery 
-      <script src="{{asset('assets/2/js/jquery.min.js') }}"></script>
-      <script src="{{asset('assets/2/js/popper.min.js') }}"></script>
-      <script src="{{asset('assets/2/js/bootstrap.min.js') }}"></script>-->
-      <!-- wow animation -->
-      <script src="{{asset('assets/2/js/animate.js') }}"></script>
-      <!-- select country -->
-      <script src="{{asset('assets/2/js/bootstrap-select.js') }}"></script>
-      <!-- owl carousel -->
-      <script src="{{asset('assets/2/js/owl.carousel.js') }}"></script> 
-      <!-- chart js -->
-      <script src="{{asset('assets/2/js/Chart.min.js') }}"></script>
-      <script src="{{asset('assets/2/js/Chart.bundle.min.js') }}"></script>
-      <script src="{{asset('assets/2/js/utils.js') }}"></script>
-      <script src="{{asset('assets/2/js/analyser.js') }}"></script>
-      <!-- nice scrollbar -->
-      <script src="{{asset('assets/2/js/perfect-scrollbar.min.js') }}"></script>
-      <script>
-         var ps = new PerfectScrollbar('#sidebar');
-      </script>
-      <!-- custom js -->
-      <script src="{{asset('assets/2/js/custom.js') }}"></script>
-      <script src="{{asset('assets/2/js/chart_custom_style1.js') }}"></script>
+      @include("layouts.scripts")
    </body>
 </html>

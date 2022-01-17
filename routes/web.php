@@ -5,11 +5,12 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\VideoController;
 use App\Http\Controllers\QAController;
-
+use App\Http\Controllers\HomeController;
 
 Route::get('/', function () {
     return view('Varsity.index');
 });
+//Route::get('/',[HomeController::class,'index'])->name('index');
 
 Route::get('/login', function () {
     return view('auth.login');
@@ -79,3 +80,4 @@ Route::post('questions/store_answer',[VideoController::class, 'store_answer'])->
 
 
 Route::get('teacher/questions/all_question',[TeacherController::class, 'questions'])->name('teacher.all_questions')->middleware('teacher');
+Route::get('teacher/questions/{id}',[TeacherController::class, 'filter_question'])->name('search')->middleware('teacher');

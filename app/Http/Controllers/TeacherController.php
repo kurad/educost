@@ -26,4 +26,15 @@ class TeacherController extends Controller
                         ->get(['levels.*','subjects.*','units.*','lessons.*','q_a_s.*']);
         return view('teacher.questions',compact('all_question','levels'));
     }
+
+    public function filter_question($id){
+
+        $filtered = Level::join('subjects','levels.id','=','subjects.level_id')
+                        ->join('units','units.subject_id','=','subjects.id')
+                        ->join('lessons','lessons.unit_id','=','units.id')
+                        ->join('q_a_s','q_a_s.lesson_id','=','lessons.id')
+                        ->where('q_a_s.id','=',$id)
+                        ->get(['levels.*','subjects.*','units.*','lessons.*','q_a_s.*']);
+        return view('teacher.questions',compact('filtered'));
+    }
 }

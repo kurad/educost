@@ -26,7 +26,11 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $our_teachers = DB:: table("users")
+                        ->where("role_id","=",1)
+                        ->get();
         return view('Varsity.index');
+        //dd($our_teachers);
     }
 
     public function logout(Request $request) {

@@ -107,7 +107,7 @@
       <div class="mu-slider-content">
         <h4>Welcome To EduCost</h4>
         <span></span>
-        <h2>The paramount companion to your greatest achievements. </h2>
+        <h3>The paramount companion to your greatest achievements. </h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor amet error eius reiciendis eum sint unde eveniet deserunt est debitis corporis temporibus recusandae accusamus.</p>
         <a href="#" class="mu-read-more-btn">Read More</a>
       </div>
@@ -123,7 +123,7 @@
       <div class="mu-slider-content">
         <h4>Learn with us and hit the target in a blink of an eye.</h4>
         <span></span>
-        <h2>Best Education Template Ever</h2>
+        <h3>Best Education Template Ever</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor amet error eius reiciendis eum sint unde eveniet deserunt est debitis corporis temporibus recusandae accusamus.</p>
         <a href="#" class="mu-read-more-btn">Read More</a>
       </div>
@@ -139,7 +139,7 @@
       <div class="mu-slider-content">
         <h4>Exclusivly For Education</h4>
         <span></span>
-        <h2>Amazing grades and the brightest future start with us</h2>
+        <h3>Amazing grades and the brightest future start with us</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor amet error eius reiciendis eum sint unde eveniet deserunt est debitis corporis temporibus recusandae accusamus.</p>
         <a href="#" class="mu-read-more-btn">Read More</a>
       </div>
@@ -275,7 +275,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-6">
                   <div class="mu-single-feature">
                     <span class="fa fa-certificate"></span>
-                    <h4>Professional Certificate</h4>
+                    <h4>Virtual Field Trips</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus non dolorem excepturi libero itaque sint labore similique maxime natus eum.</p>
                     <a href="#">Read More</a>
                   </div>
@@ -428,100 +428,7 @@
   <!-- End latest course section -->
 
   <!-- Start our teacher -->
-  <section id="mu-our-teacher">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="mu-our-teacher-area">
-            <!-- begain title -->
-            <div class="mu-title">
-              <h2>Our Teachers</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, repudiandae, suscipit repellat minus molestiae ea.</p>
-            </div>
-            <!-- end title -->
-            <!-- begain our teacher content -->
-            <div class="mu-our-teacher-content">
-              <div class="row">
-                <div class="col-lg-3 col-md-3  col-sm-6">
-                  <div class="mu-our-teacher-single">
-                    <figure class="mu-our-teacher-img">
-                      <img src="assets/img/teachers/teacher-01.png" alt="teacher img">
-                      <div class="mu-our-teacher-social">
-                        <a href="#"><span class="fa fa-facebook"></span></a>
-                        <a href="#"><span class="fa fa-twitter"></span></a>
-                        <a href="#"><span class="fa fa-linkedin"></span></a>
-                        <a href="#"><span class="fa fa-google-plus"></span></a>
-                      </div>
-                    </figure>                    
-                    <div class="mu-ourteacher-single-content">
-                      <h4>Brian Dean</h4>
-                      <span>Math Teacher</span>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quod pariatur recusandae odio dignissimos. Eligendi.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6">
-                  <div class="mu-our-teacher-single">
-                    <figure class="mu-our-teacher-img">
-                      <img src="assets/img/teachers/teacher-02.png" alt="teacher img">
-                      <div class="mu-our-teacher-social">
-                        <a href="#"><span class="fa fa-facebook"></span></a>
-                        <a href="#"><span class="fa fa-twitter"></span></a>
-                        <a href="#"><span class="fa fa-linkedin"></span></a>
-                        <a href="#"><span class="fa fa-google-plus"></span></a>
-                      </div>
-                    </figure>                    
-                    <div class="mu-ourteacher-single-content">
-                      <h4>James Hein</h4>
-                      <span>Physics Teacher</span>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quod pariatur recusandae odio dignissimos. Eligendi.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6">
-                  <div class="mu-our-teacher-single">
-                    <figure class="mu-our-teacher-img">
-                      <img src="assets/img/teachers/teacher-03.png" alt="teacher img">
-                      <div class="mu-our-teacher-social">
-                        <a href="#"><span class="fa fa-facebook"></span></a>
-                        <a href="#"><span class="fa fa-twitter"></span></a>
-                        <a href="#"><span class="fa fa-linkedin"></span></a>
-                        <a href="#"><span class="fa fa-google-plus"></span></a>
-                      </div>
-                    </figure>                    
-                    <div class="mu-ourteacher-single-content">
-                      <h4>Rebeca Michel</h4>
-                      <span>English Teacher</span>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quod pariatur recusandae odio dignissimos. Eligendi.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6">
-                  <div class="mu-our-teacher-single">
-                    <figure class="mu-our-teacher-img">
-                      <img src="assets/img/teachers/teacher-04.png" alt="teacher img">
-                      <div class="mu-our-teacher-social">
-                        <a href="#"><span class="fa fa-facebook"></span></a>
-                        <a href="#"><span class="fa fa-twitter"></span></a>
-                        <a href="#"><span class="fa fa-linkedin"></span></a>
-                        <a href="#"><span class="fa fa-google-plus"></span></a>
-                      </div>
-                    </figure>                    
-                    <div class="mu-ourteacher-single-content">
-                      <h4>John Doe</h4>
-                      <span>Biology Teacher</span>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quod pariatur recusandae odio dignissimos. Eligendi.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> 
-            <!-- End our teacher content -->           
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  @include("teacher.teachers")
   <!-- End our teacher -->
 
   <!-- Start from blog -->
@@ -620,9 +527,7 @@
                   <li><a href="#">About Us</a></li>
                   <li><a href="">Features</a></li>
                   <li><a href="">Course</a></li>
-                  <li><a href="">Event</a></li>
-                  <li><a href="">Sitemap</a></li>
-                  <li><a href="">Term Of Use</a></li>
+                  
                 </ul>
               </div>
             </div>
@@ -641,11 +546,7 @@
             <div class="col-lg-3 col-md-3 col-sm-3">
               <div class="mu-footer-widget">
                 <h4>News letter</h4>
-                <p>Get latest update, news & academic offers</p>
-                <form class="mu-subscribe-form">
-                  <input type="email" placeholder="Type your Email">
-                  <button class="mu-subscribe-btn" type="submit">Subscribe!</button>
-                </form>               
+                <p>Get latest update, news & academic offers</p>             
               </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3">

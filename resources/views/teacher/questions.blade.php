@@ -24,7 +24,7 @@
                                     <div class="col-md-12">
                                        <div class="full padding_infor_info">
                                           <div class="mail-box">                           
-                              <form action="{{route('create_question')}}" class="row" method="POST">
+                              <form action="{{route('search', $q_a_s->id)}}" class="row" method="POST">
                                  @csrf
                                  <div class="form-group col-md-3">
                                     <label for="level_id">Select Level</label>
