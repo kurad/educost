@@ -157,7 +157,7 @@
             <div class="mu-service-single">
               <span class="fa fa-book"></span>
               <h3>Learn Online</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officiis, deleniti dolorem exercitationem praesentium, est!</p>
+              <p>With EduCost, you get access to online teaching resources and exercises for a specific topic</p>
             </div>
             <!-- Start single service -->
             <!-- Start single service -->
