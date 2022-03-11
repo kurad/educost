@@ -2,7 +2,7 @@
                   <h4>General</h4>
                   <ul class="list-unstyled components">
                     @if(Auth::user()->role_id==1)
-                     <li><a href="{{route('dashboard')}}"><i class="fa fa-clock-o orange_color"></i> <span>Dashboard</span></a></li>
+                     <li><a href="{{route('dashboard')}}"><i class="fa fa-clock-o orange_color {{ request()->is('admin/dashboard') ? 'active':''}}"></i> <span>Dashboard</span></a></li>
                      <li>
                         <a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-tasks yellow_color"></i> <span>Teaching Aids</span></a>
                         <ul class="collapse list-unstyled" id="dashboard">
@@ -20,7 +20,7 @@
                      <li>
                         <a href="#element" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-file purple_color"></i> <span>Course Material</span></a>
                         <ul class="collapse list-unstyled" id="element">
-                           <li><a href="#">> <span>Notes</span></a></li>
+                           <li><a href="{{route('lesson.index')}}">> <span>Courses</span></a></li>
                            <li><a href="#">> <span>Experiments</span></a></li>
                            <li><a href="#">> <span>Video Tutorials</span></a></li>
                            <li><a href="#">> <span>Virtual field trips</span></a></li>
@@ -44,16 +44,16 @@
                         <a href="#settings" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-gear yellow_color"></i> <span>Settings</span></a>
                         <ul class="collapse list-unstyled" id="settings">
                            <li>
-                              <a href="{{route('levels')}}">> <span>Levels</span></a>
+                              <a href="{{route('level.index')}}">> <span>Levels</span></a>
                            </li>
                            <li>
-                              <a href="{{route('subjects')}}">> <span>Subjects</span></a>
+                              <a href="{{route('subject.index')}}">> <span>Subjects</span></a>
                            </li>
                            <li>
                               <a href="{{route('units')}}">> <span>Units</span></a>
                            </li>
                            <li>
-                              <a href="{{route('lessons')}}">> <span>Lessons</span></a>
+                              <a href="#">> <span>Lessons</span></a>
                            </li>
                         </ul>
                      </li>

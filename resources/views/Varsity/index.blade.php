@@ -291,227 +291,16 @@
   <!-- End features section -->
 
   <!-- Start latest course section -->
-  <section id="mu-latest-courses">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 col-md-12">
-          <div class="mu-latest-courses-area">
-            <!-- Start Title -->
-            <div class="mu-title">
-              <h2>Latest Courses</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ipsa ea maxime mollitia, vitae voluptates, quod at, saepe reprehenderit totam aliquam architecto fugiat sunt animi!</p>
-            </div>
-            <!-- End Title -->
-            <!-- Start latest course content -->
-            <div id="mu-latest-course-slide" class="mu-latest-courses-content">
-              <div class="col-lg-4 col-md-4 col-xs-12">
-                <div class="mu-latest-course-single">
-                  <figure class="mu-latest-course-img">
-                    <a href="#"><img src="assets/img/courses/1.jpg" alt="img"></a>
-                    <figcaption class="mu-latest-course-imgcaption">
-                      <a href="#">Drawing</a>
-                      <span><i class="fa fa-clock-o"></i>90Days</span>
-                    </figcaption>
-                  </figure>
-                  <div class="mu-latest-course-single-content">
-                    <h4><a href="#">Lorem ipsum dolor sit amet.</a></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quod nisi quisquam modi dolore, dicta obcaecati architecto quidem ullam quia.</p>
-                    <div class="mu-latest-course-single-contbottom">
-                      <a class="mu-course-details" href="#">Details</a>
-                      <span class="mu-course-price" href="#">$165.00</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-4 col-xs-12">
-                <div class="mu-latest-course-single">
-                  <figure class="mu-latest-course-img">
-                    <a href="#"><img src="assets/img/courses/2.jpg" alt="img"></a>
-                    <figcaption class="mu-latest-course-imgcaption">
-                      <a href="#">Engineering </a>
-                      <span><i class="fa fa-clock-o"></i>75Days</span>
-                    </figcaption>
-                  </figure>
-                  <div class="mu-latest-course-single-content">
-                    <h4><a href="#">Lorem ipsum dolor sit amet.</a></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quod nisi quisquam modi dolore, dicta obcaecati architecto quidem ullam quia.</p>
-                    <div class="mu-latest-course-single-contbottom">
-                      <a class="mu-course-details" href="#">Details</a>
-                      <span class="mu-course-price" href="#">$165.00</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-4 col-xs-12">
-                <div class="mu-latest-course-single">
-                  <figure class="mu-latest-course-img">
-                    <a href="#"><img src="assets/img/courses/3.jpg" alt="img"></a>
-                    <figcaption class="mu-latest-course-imgcaption">
-                      <a href="#">Academic</a>
-                      <span><i class="fa fa-clock-o"></i>45Days</span>
-                    </figcaption>
-                  </figure>
-                  <div class="mu-latest-course-single-content">
-                    <h4><a href="#">Lorem ipsum dolor sit amet.</a></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quod nisi quisquam modi dolore, dicta obcaecati architecto quidem ullam quia.</p>
-                    <div class="mu-latest-course-single-contbottom">
-                      <a class="mu-course-details" href="#">Details</a>
-                      <span class="mu-course-price" href="#">$165.00</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-4 col-xs-12">
-                <div class="mu-latest-course-single">
-                  <figure class="mu-latest-course-img">
-                    <a href="#"><img src="assets/img/courses/1.jpg" alt="img"></a>
-                    <figcaption class="mu-latest-course-imgcaption">
-                      <a href="#">Drawing</a>
-                      <span><i class="fa fa-clock-o"></i>90Days</span>
-                    </figcaption>
-                  </figure>
-                  <div class="mu-latest-course-single-content">
-                    <h4><a href="#">Lorem ipsum dolor sit amet.</a></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quod nisi quisquam modi dolore, dicta obcaecati architecto quidem ullam quia.</p>
-                    <div class="mu-latest-course-single-contbottom">
-                      <a class="mu-course-details" href="#">Details</a>
-                      <span class="mu-course-price" href="#">$165.00</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-4 col-xs-12">
-                <div class="mu-latest-course-single">
-                  <figure class="mu-latest-course-img">
-                    <a href="#"><img src="assets/img/courses/2.jpg" alt="img"></a>
-                    <figcaption class="mu-latest-course-imgcaption">
-                      <a href="#">Engineering </a>
-                      <span><i class="fa fa-clock-o"></i>75Days</span>
-                    </figcaption>
-                  </figure>
-                  <div class="mu-latest-course-single-content">
-                    <h4><a href="#">Lorem ipsum dolor sit amet.</a></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quod nisi quisquam modi dolore, dicta obcaecati architecto quidem ullam quia.</p>
-                    <div class="mu-latest-course-single-contbottom">
-                      <a class="mu-course-details" href="#">Details</a>
-                      <span class="mu-course-price" href="#">$165.00</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-4 col-xs-12">
-                <div class="mu-latest-course-single">
-                  <figure class="mu-latest-course-img">
-                    <a href="#"><img src="assets/img/courses/3.jpg" alt="img"></a>
-                    <figcaption class="mu-latest-course-imgcaption">
-                      <a href="#">Academic</a>
-                      <span><i class="fa fa-clock-o"></i>45Days</span>
-                    </figcaption>
-                  </figure>
-                  <div class="mu-latest-course-single-content">
-                    <h4><a href="#">Lorem ipsum dolor sit amet.</a></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quod nisi quisquam modi dolore, dicta obcaecati architecto quidem ullam quia.</p>
-                    <div class="mu-latest-course-single-contbottom">
-                      <a class="mu-course-details" href="#">Details</a>
-                      <span class="mu-course-price" href="#">$165.00</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End latest course content -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+
+  @include("includes.courses")
+  
   <!-- End latest course section -->
 
   <!-- Start our teacher -->
   @include("teacher.teachers")
   <!-- End our teacher -->
 
-  <!-- Start from blog -->
-  <section id="mu-from-blog">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="mu-from-blog-area">
-            <!-- start title -->
-            <div class="mu-title">
-              <h2>From Blog</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum vitae quae vero ut natus. Dolore!</p>
-            </div>
-            <!-- end title -->  
-            <!-- start from blog content   -->
-            <div class="mu-from-blog-content">
-              <div class="row">
-                <div class="col-md-4 col-sm-4">
-                  <article class="mu-blog-single-item">
-                    <figure class="mu-blog-single-img">
-                      <a href="#"><img src="assets/img/blog/blog-1.jpg" alt="img"></a>
-                      <figcaption class="mu-blog-caption">
-                        <h3><a href="#">Lorem ipsum dolor sit amet.</a></h3>
-                      </figcaption>                      
-                    </figure>
-                    <div class="mu-blog-meta">
-                      <a href="#">By Admin</a>
-                      <a href="#">02 June 2016</a>
-                      <span><i class="fa fa-comments-o"></i>87</span>
-                    </div>
-                    <div class="mu-blog-description">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ipsum non voluptatum eum repellendus quod aliquid. Vitae, dolorum voluptate quis repudiandae eos molestiae dolores enim.</p>
-                      <a class="mu-read-more-btn" href="#">Read More</a>
-                    </div>
-                  </article>
-                </div>
-                <div class="col-md-4 col-sm-4">
-                  <article class="mu-blog-single-item">
-                    <figure class="mu-blog-single-img">
-                      <a href="#"><img src="assets/img/blog/blog-2.jpg" alt="img"></a>
-                      <figcaption class="mu-blog-caption">
-                        <h3><a href="#">Lorem ipsum dolor sit amet.</a></h3>
-                      </figcaption>                      
-                    </figure>
-                    <div class="mu-blog-meta">
-                      <a href="#">By Admin</a>
-                      <a href="#">02 June 2016</a>
-                      <span><i class="fa fa-comments-o"></i>87</span>
-                    </div>
-                    <div class="mu-blog-description">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ipsum non voluptatum eum repellendus quod aliquid. Vitae, dolorum voluptate quis repudiandae eos molestiae dolores enim.</p>
-                      <a class="mu-read-more-btn" href="#">Read More</a>
-                    </div>
-                  </article>
-                </div>
-                <div class="col-md-4 col-sm-4">
-                  <article class="mu-blog-single-item">
-                    <figure class="mu-blog-single-img">
-                      <a href="#"><img src="assets/img/blog/blog-3.jpg" alt="img"></a>
-                      <figcaption class="mu-blog-caption">
-                        <h3><a href="#">Lorem ipsum dolor sit amet.</a></h3>
-                      </figcaption>                      
-                    </figure>
-                    <div class="mu-blog-meta">
-                      <a href="#">By Admin</a>
-                      <a href="#">02 June 2016</a>
-                      <span><i class="fa fa-comments-o"></i>87</span>
-                    </div>
-                    <div class="mu-blog-description">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ipsum non voluptatum eum repellendus quod aliquid. Vitae, dolorum voluptate quis repudiandae eos molestiae dolores enim.</p>
-                      <a class="mu-read-more-btn" href="#">Read More</a>
-                    </div>
-                  </article>
-                </div>
-              </div>
-            </div>     
-            <!-- end from blog content   -->   
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End from blog -->
+  
 
   <!-- Start footer -->
   <footer id="mu-footer">
@@ -526,7 +315,7 @@
                 <ul>
                   <li><a href="#">About Us</a></li>
                   <li><a href="">Features</a></li>
-                  <li><a href="">Course</a></li>
+                  <li><a href="">Courses</a></li>
                   
                 </ul>
               </div>
@@ -537,7 +326,7 @@
                 <ul>
                   <li><a href="">Get Started</a></li>
                   <li><a href="#">My Questions</a></li>
-                  <li><a href="">Download Files</a></li>
+                  <li><a href="">Notes</a></li>
                   <li><a href="">Latest Course</a></li>
                   <li><a href="">Academic News</a></li>                  
                 </ul>
@@ -546,7 +335,7 @@
             <div class="col-lg-3 col-md-3 col-sm-3">
               <div class="mu-footer-widget">
                 <h4>News letter</h4>
-                <p>Get latest update, news & academic offers</p>             
+                <p>Get latest update, news & Teaching materials</p>             
               </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3">
@@ -554,7 +343,7 @@
                 <h4>Contact</h4>
                 <address>
                   <p>P.O. Box 320, Bugesera-Rwanda</p>
-                  <p>Phone: (250) 788407941 </p>
+                  <p>Phone: (+250)788407941 </p>
                   <p>Website: www.educost.rw</p>
                   <p>Email: info@educost.rw</p>
                 </address>

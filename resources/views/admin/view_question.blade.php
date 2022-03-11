@@ -1,5 +1,4 @@
-            @extends('layouts.app')
-         @section('content')
+<div>
                <div class="midde_cont">
                   <div class="container-fluid">
                      <div class="row column_title">
@@ -32,4 +31,4 @@
                   </div>
                </div>
                <!-- end dashboard inner -->
-            @endsection
+            </div>

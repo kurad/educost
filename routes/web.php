@@ -6,6 +6,10 @@ use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\VideoController;
 use App\Http\Controllers\QAController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LessonController;
+use App\Http\Livewire\Selectlesson;
+use App\Http\Livewire\Admin\Settings\Levels;
+use App\Http\Livewire\Admin\Settings\SubjectLivewire;
 
 Route::get('/', function () {
     return view('Varsity.index');
@@ -22,12 +26,12 @@ Route::get('/register', function () {
 Auth::routes();
 
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('dashboard')->middleware('admin');
+Route::get('admin/dashboard', [AdminController::class, 'dashboard'])->name('dashboard')->middleware('admin');
 Route::get('/admin/levels', [AdminController::class, 'levels'])->name('levels')->middleware('admin');
 Route::post('/admin/create_level', [AdminController::class, 'create_level'])->name('create_level')->middleware('admin');
 Route::get('/admin/show_create_level',[AdminController::class, 'show_create_level'])->name('show_create_level')->middleware('admin');
 //---------------------------------------------------------------------------------------------------------------
-Route::get('/admin/subjects', [AdminController::class, 'subjects'])->name('subjects')->middleware('admin');
+//Route::get('/admin/subjects', [AdminController::class, 'subjects'])->name('subjects')->middleware('admin');
 Route::post('/admin/create_subject', [AdminController::class, 'create_subject'])->name('create_subject')->middleware('admin');
 Route::get('/admin/show_create_subject',[AdminController::class, 'show_create_subject'])->name('show_create_subject')->middleware('admin');
 //--------------------------------------------------------------Units--------------------------------
@@ -37,8 +41,10 @@ Route::post('/admin/create_unit', [AdminController::class, 'create_unit'])->name
 Route::get('/admin/show_create_unit',[AdminController::class, 'show_create_unit'])->name('show_create_unit')->middleware('admin');
 
 //------------------------------------------------Lessons--------------------------------
+//Route::resource('admin/lesson',LessonController::class);
 
-Route::get('/admin/lessons', [AdminController::class, 'lessons'])->name('lessons')->middleware('admin');
+//Route::get('admin/lesson', [LessonController::class, 'index'])->name('lesson.index')->middleware('admin');
+Route::get('admin/lesson/create', [LessonController::class, 'create'])->name('lesson.create')->middleware('admin');
 Route::post('/admin/create_lesson', [AdminController::class, 'create_lesson'])->name('create_lesson')->middleware('admin');
 Route::get('/admin/show_create_lesson',[AdminController::class, 'show_create_lesson'])->name('show_create_lesson')->middleware('admin');
 
@@ -52,13 +58,7 @@ Route::get('/admin/lesson/show_create_video_lesson',[AdminController::class, 'sh
 Route::get('logout', [App\Http\Controllers\HomeController::class,'logout']);
 Route::get('/profile', [App\Http\Controllers\HomeController::class,'profile']);
 Route::get('/teacher/dashboard', [App\Http\Controllers\TeacherController::class, 'dashboard'])->name('teacher_dashboard')->middleware('teacher');
-/*
-Route::group(['prefix'=>'admin','middleware'=>['admin','auth']],function(){
-        Route::get('dashboard',[AdminController::class,'index'])->name('master.dashboard');
-        //Route::get('profile',[AdminController::class,'profile'])->name('master.profile');
-        //Route::get('setting',[AdminController::class,'settings'])->name('master.settings');
-});
-*/
+
 
 Route::get('video/videos',[VideoController::class, 'videos'])->name('videos')->middleware('admin');
 Route::get('video/show_create_video',[VideoController::class, 'index'])->name('show_create_video')->middleware('admin');
@@ -81,3 +81,8 @@ Route::post('questions/store_answer',[VideoController::class, 'store_answer'])->
 
 Route::get('teacher/questions/all_question',[TeacherController::class, 'questions'])->name('teacher.all_questions')->middleware('teacher');
 Route::get('teacher/questions/{id}',[TeacherController::class, 'filter_question'])->name('search')->middleware('teacher');
+
+Route::get('admin/lesson', Selectlesson::class)->name('lesson.index');
+//Route::get('admin/lesson/create', Selectlesson::class)->name('lesson.create');
+Route::get('admin/levels', Levels::class)->name('level.index');
+Route::get('admin/subjects', SubjectLivewire::class)->name('subject.index');

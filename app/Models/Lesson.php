@@ -13,6 +13,7 @@ class Lesson extends Model
         'unit_id',
         'lesson_title',
         'objectives',
-        'teaching_resource'
+        'teaching_resource',
+        'published'
     ];
 }

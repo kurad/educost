@@ -3,12 +3,13 @@
       <script src="{{asset('assets/2/js/popper.min.js') }}"></script>
       <script src="{{asset('assets/2/js/bootstrap.min.js') }}"></script>-->
       <!-- wow animation -->
+      <script src="{{asset('assets/2/js/jquery.min.js') }}"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="{{asset('assets/js/tinymce/tinymce.min.js') }}"></script>
     <script src="{{asset('assets/2/js/animate.js') }}"></script>
-      <!-- select country -->
+
     <script src="{{asset('assets/2/js/bootstrap-select.js') }}"></script>
      <!-- owl carousel -->
     <script src="{{asset('assets/2/js/owl.carousel.js') }}"></script> 

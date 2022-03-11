@@ -1,4 +1,4 @@
-	<link rel="icon" href="{{ asset('assets/2/images/fevicon.png') }}" type="image/png" />
+  	<link rel="icon" href="{{ asset('assets/2/images/fevicon.png') }}" type="image/png" />
       <!-- bootstrap css -->
     <link rel="stylesheet" href="{{ asset('assets/2/css/bootstrap.min.css') }}" />
       <!-- site css -->

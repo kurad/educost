@@ -1,7 +1,9 @@
-            @extends('layouts.app')
-         @section('content')
-
-    
+         @extends('layouts.app')
+         @section('content')  
+         @section('script')
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script> 
+         @endsection
                <div class="midde_cont">
                   <div class="container-fluid">
                      <div class="row column_title">
@@ -57,7 +59,7 @@
                                  </div>
                                  <div class="form-group">
                                     <label for="question">Question</label>
-                                    <textarea class="form-control" id="question" name="question" placeholder="Type your question">
+                                    <textarea class="form-control" id="tinymce" name="question" placeholder="Type your question">
                                        
                                     </textarea>
                                  </div>
@@ -72,93 +74,15 @@
                   <!-- footer -->
                   <div class="container-fluid">
                      <div class="footer">
-                        <p>Copyright © 2018 Designed by html.design. All rights reserved.</p>
+                        <p>Copyright © 2022 Designed by <a href="educost.rw">Educost</a>. All rights reserved.</p>
                      </div>
                   </div>
                </div>
                <!-- end dashboard inner -->
 
-               <script type=text/javascript>
-                 $('#levels').change(function(){
-                 var levelID = $(this).val();  
-                 if(levelID){
-                   $.ajax({
-                     type:"GET",
-                     url:"{{url('getSubjects')}}?level_id="+levelID,
-                     success:function(res){        
-                     if(res){
-                       $("#subjects").empty();
-                       $("#subjects").append('<option>Select Subject</option>');
-                       $.each(res,function(key,value){
-                         $("#subjects").append('<option value="'+key+'">'+value+'</option>');
-                       });
-                     
-                     }else{
-                       $("#subjects").empty();
-                     }
-                     }
-                   });
-                 }else{
-                   $("#subjects").empty();
-                   $("#units").empty();
-                   $("#lessons").empty();
-                 }   
-                 });
-                 $('#subjects').on('change',function(){
-                 var subjectID = $(this).val();  
-                 if(subjectID){
-                   $.ajax({
-                     type:"GET",
-                     url:"{{url('getUnits')}}?subject_id="+subjectID,
-                     success:function(res){        
-                     if(res){
-                        $("#units").empty();
-                        $("#units").append('<option>Select Unit</option>');
-                       $.each(res,function(key,value){
-                         $("#units").append('<option value="'+key+'">'+value+'</option>');
-                       });
-                     
-                     }else{
-                       $("#units").empty();
-                     }
-                     }
-                   });
-                 }else{
-                   $("#units").empty();
-                   $("#lessons").empty();
-                 }
-                   
-                 });
-
-                 $('#units').on('change',function(){
-                 var unitID = $(this).val();  
-                 if(unitID){
-                   $.ajax({
-                     type:"GET",
-                     url:"{{url('getLessons')}}?unit_id="+unitID,
-                     success:function(res){        
-                     if(res){
-                        $("#lessons").empty();
-                        $("#lessons").append('<option>Select Lesson</option>');
-                       $.each(res,function(key,value){
-                         $("#lessons").append('<option value="'+key+'">'+value+'</option>');
-                       });
-                     
-                     }else{
-                       $("#lessons").empty();
-                     }
-                     }
-                   });
-                 }else{
-                   
-                   $("#lessons").empty();
-                 }
-                   
-                 });
-            </script>
-            <script>
+               <script>
                tinymce.init({
-                 selector: 'textarea#question', // Replace this CSS selector to match the placeholder element for TinyMCE
+                 selector: 'textarea#tinymce', // Replace this CSS selector to match the placeholder element for TinyMCE
                  plugins: 'code table lists',
                  toolbar: 'undo redo | formatselect| bold italic | alignleft aligncenter alignright | indent outdent | bullist numlist | code | table'
             });

@@ -21,6 +21,7 @@ class Admin
         else {
             return redirect()->route('login');
         }
+        return response()->json('You don\'t have permission');
 
         if (Auth::check() && Auth::user()->role_id == 2) {
             
@@ -29,6 +30,7 @@ class Admin
         else {
             return redirect()->route('login');
         }
+        return response()->json('You don\'t have permission');
 
         if (Auth::check() && Auth::user()->role_id == 3) {
             return redirect()->route('student/dashboard');

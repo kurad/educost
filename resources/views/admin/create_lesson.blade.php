@@ -1,5 +1,5 @@
-            @extends('layouts.app')
-         @section('content')
+   @extends('layouts.app')
+   @section('content')
 <!-- dashboard inner -->
                <div class="midde_cont">
                   <div class="container-fluid">
