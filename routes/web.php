@@ -10,6 +10,9 @@ use App\Http\Controllers\LessonController;
 use App\Http\Livewire\Selectlesson;
 use App\Http\Livewire\Admin\Settings\Levels;
 use App\Http\Livewire\Admin\Settings\SubjectLivewire;
+use App\Http\Livewire\Admin\Courses\CreateNewLesson;
+use App\Http\Livewire\Admin\Courses\UpdateLesson;
+use App\Http\Livewire\Admin\Courses\LessonDetails;
 
 Route::get('/', function () {
     return view('Varsity.index');
@@ -83,6 +86,8 @@ Route::get('teacher/questions/all_question',[TeacherController::class, 'question
 Route::get('teacher/questions/{id}',[TeacherController::class, 'filter_question'])->name('search')->middleware('teacher');
 
 Route::get('admin/lesson', Selectlesson::class)->name('lesson.index');
-//Route::get('admin/lesson/create', Selectlesson::class)->name('lesson.create');
+Route::get('admin/lesson/create', CreateNewLesson::class)->name('admin.lesson.create');
+Route::get('admin/lesson/edit/{id}', UpdateLesson::class)->name('admin.lesson.edit');
+Route::get('admin/lesson/view', LessonDetails::class)->name('admin.lesson.view');
 Route::get('admin/levels', Levels::class)->name('level.index');
 Route::get('admin/subjects', SubjectLivewire::class)->name('subject.index');

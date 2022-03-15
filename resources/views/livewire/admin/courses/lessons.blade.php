@@ -1,5 +1,5 @@
            <div>
-            @include('admin.courses.update')
+            
             
                <div class="midde_cont">
                   <div class="container-fluid">
@@ -28,9 +28,7 @@
 
                               <div class="table_section padding_infor_info">
                                  <a href="{{route('admin.lesson.create')}}" class="btn btn-success pull-right"><span class="fa fa-plus"></span>Add Lesson</a>
-                                 @if($isModalOpen)
-                                 @include('admin.courses.create5')
-                                 @endif
+                                
                                  <br><br><br>
                                  <div class="table-responsive-sm">
                                     <table class="table">
@@ -56,7 +54,11 @@
                                                 
                                                 <a href="#" class="btn btn-success" wire:click="view_lesson({{ $lesson->id }})"><span class="fa fa-eye mr-2"></span>View Course</a>
 
-                                                <button data-toggle="modal" data-target="#updateModal" wire:click="edit({{ $lesson->id }})" class="btn btn-primary btn-sm">Edit</button>
+                                                <a href="{{ route('admin.lesson.edit', $lesson->id) }}" class="btn btn-secondary mr-2">
+                                                <i class="fa fa-edit ">Edit</i>
+                                            </a>
+
+                                       
                                              </td>
                                           </tr>
                                           @endforeach

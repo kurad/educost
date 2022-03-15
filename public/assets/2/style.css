@@ -3405,7 +3405,9 @@ table.projects tr td:first-child {
     background-size: cover;
     background-color: #fff;
 }
-
+.ck-editor__editable {
+    min-height: 200px !important;
+}
 
 /*------------------------------------------------------------------
     27. Map

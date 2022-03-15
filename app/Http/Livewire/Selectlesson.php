@@ -27,7 +27,6 @@ class Selectlesson extends Component
     }
     public function render()
     {
-        //return view('livewire.selectlesson')->extends('layouts.app');
 
         $levels = Level::all();
         $lessons = Level::join('subjects','levels.id','=','subjects.level_id')
@@ -35,7 +34,7 @@ class Selectlesson extends Component
                         ->join('lessons','lessons.unit_id','=','units.id')
                         ->get(['levels.*','subjects.*','units.*','lessons.*']);
 
-        return view('admin.courses.lessons', compact('lessons','levels'))->extends('layouts.app');
+        return view('livewire.admin.courses.lessons', compact('lessons','levels'))->extends('layouts.app');
     }
 
     public function updatedSelectedLevel($level){
@@ -49,10 +48,7 @@ class Selectlesson extends Component
             $this->units = Unit::where('subject_id',$subject)->get();
         }
     }
-    public function addNewLesson()
-    {
-        return view('admin.courses.create')->extends('layouts.app');
-    }
+    
     public function openModalPopover()
     {
         $this->isModalOpen = true;

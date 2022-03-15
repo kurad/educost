@@ -5,8 +5,8 @@
     <link rel="stylesheet" href="{{ asset('assets/2/style.css') }}" />
       <!-- responsive css -->
     <link rel="stylesheet" href="{{ asset('assets/2/css/responsive.css') }}" />
-      <!-- color css -->
-    <link rel="stylesheet" href="{{ asset('assets/2/css/colors.css') }}" />
+      <!-- color css 
+    <link rel="stylesheet" href="{{ asset('assets/2/css/colors.css') }}" />-->
       <!-- select bootstrap -->
     <link rel="stylesheet" href="{{ asset('assets/2/css/bootstrap-select.css') }}" />
       <!-- scrollbar css -->

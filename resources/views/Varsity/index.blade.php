@@ -101,14 +101,14 @@
     <div class="mu-slider-single">
       <div class="mu-slider-img">
         <figure>
-          <img src="{{asset('assets/img/slider/1.jpg')}}" alt="img">
+          <img src="{{asset('assets/2/images/layout_img/edu.jpg')}}" alt="img">
         </figure>
       </div>
       <div class="mu-slider-content">
         <h4>Welcome To EduCost</h4>
         <span></span>
         <h3>The paramount companion to your greatest achievements. </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor amet error eius reiciendis eum sint unde eveniet deserunt est debitis corporis temporibus recusandae accusamus.</p>
+        <p></p>
         <a href="#" class="mu-read-more-btn">Read More</a>
       </div>
     </div>
@@ -117,14 +117,14 @@
     <div class="mu-slider-single">
       <div class="mu-slider-img">
         <figure>
-          <img src="{{asset('assets/img/slider/2.jpg')}}" alt="img">
+          <img src="{{asset('assets/2/images/layout_img/g7.jpg')}}" alt="img">
         </figure>
       </div>
       <div class="mu-slider-content">
-        <h4>Learn with us and hit the target in a blink of an eye.</h4>
+        <h4>Best Education Online platform Ever</h4>
         <span></span>
-        <h3>Best Education Template Ever</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor amet error eius reiciendis eum sint unde eveniet deserunt est debitis corporis temporibus recusandae accusamus.</p>
+        <h3>Learn with us and hit the target in a blink of an eye.</h3>
+        
         <a href="#" class="mu-read-more-btn">Read More</a>
       </div>
     </div>
@@ -133,14 +133,14 @@
     <div class="mu-slider-single">
       <div class="mu-slider-img">
         <figure>
-          <img src="{{asset('assets/img/slider/3.jpg')}}" alt="img">
+          <img src="{{asset('assets/2/images/layout_img/g3.jpg')}}" alt="img">
         </figure>
       </div>
       <div class="mu-slider-content">
-        <h4>Exclusivly For Education</h4>
+        <h4>Exclusively For Education</h4>
         <span></span>
         <h3>Amazing grades and the brightest future start with us</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor amet error eius reiciendis eum sint unde eveniet deserunt est debitis corporis temporibus recusandae accusamus.</p>
+        
         <a href="#" class="mu-read-more-btn">Read More</a>
       </div>
     </div>
@@ -148,30 +148,33 @@
   </section>
   <!-- End Slider -->
   <!-- Start service  -->
+
   <section id="mu-service">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 col-md-12">
           <div class="mu-service-area">
+           
             <!-- Start single service -->
             <div class="mu-service-single">
-              <span class="fa fa-book"></span>
-              <h3>Learn Online</h3>
-              <p>With EduCost, you get access to online teaching resources and exercises for a specific topic</p>
+              <span class="fa fa-play"></span>
+              <h3>Video Tutorials</h3>
+              <p>Replacing the theoretical with stunning and easy-to-understand videos, simulations, and Charts.</p>
+              <br><br>
+            </div>
+            <!-- Start single service -->
+             <!-- Start single service -->
+            <div class="mu-service-single">
+              <span class="fa fa-plane"></span>
+              <h3>Virtual Field Trips</h3>
+              <img src="{{asset('assets/2/images/virtual_trip.jpg')}}" style="height:124px; width: 180px;">
             </div>
             <!-- Start single service -->
             <!-- Start single service -->
             <div class="mu-service-single">
-              <span class="fa fa-users"></span>
-              <h3>Expert Teachers</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officiis, deleniti dolorem exercitationem praesentium, est!</p>
-            </div>
-            <!-- Start single service -->
-            <!-- Start single service -->
-            <div class="mu-service-single">
-              <span class="fa fa-table"></span>
-              <h3>Best Classrooms</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officiis, deleniti dolorem exercitationem praesentium, est!</p>
+              <span class="fa fa-question-circle"></span>
+              <h3>Revision Questions</h3>
+              <p>Practice makes perfect. Access thousands of revision questions and answers for free.</p><br><br><br>
             </div>
             <!-- Start single service -->
           </div>
@@ -235,8 +238,8 @@
                 <div class="col-lg-4 col-md-4  col-sm-6">
                   <div class="mu-single-feature">
                     <span class="fa fa-book"></span>
-                    <h4>Professional Courses</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus non dolorem excepturi libero itaque sint labore similique maxime natus eum.</p>
+                    <h4>E-Books</h4>
+                    <p>Learn from the past and plan the future. With our digital library you will live a thousand lives.</p>
                     <a href="#">Read More</a>
                   </div>
                 </div>
@@ -251,16 +254,16 @@
                 <div class="col-lg-4 col-md-4 col-sm-6">
                   <div class="mu-single-feature">
                     <span class="fa fa-laptop"></span>
-                    <h4>Online Learning</h4>
+                    <h4>Course Materials</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus non dolorem excepturi libero itaque sint labore similique maxime natus eum.</p>
                     <a href="#">Read More</a>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6">
                   <div class="mu-single-feature">
-                    <span class="fa fa-microphone"></span>
-                    <h4>Audio Lessons</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus non dolorem excepturi libero itaque sint labore similique maxime natus eum.</p>
+                    <span class="fa fa-flask"></span>
+                    <h4>Science Experiments</h4>
+                    <p>The true method of competency is experimenting. Exploit our experiments to understand better the scientific concepts behind.</p>
                     <a href="#">Read More</a>
                   </div>
                 </div>
@@ -268,13 +271,13 @@
                   <div class="mu-single-feature">
                     <span class="fa fa-film"></span>
                     <h4>Video Lessons</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus non dolorem excepturi libero itaque sint labore similique maxime natus eum.</p>
+                    <p>Replacing the theoretical with stunning and easy-to-understand videos, simulations, and Charts.</p>
                     <a href="#">Read More</a>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6">
                   <div class="mu-single-feature">
-                    <span class="fa fa-certificate"></span>
+                    <span class="fa fa-plane"></span>
                     <h4>Virtual Field Trips</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus non dolorem excepturi libero itaque sint labore similique maxime natus eum.</p>
                     <a href="#">Read More</a>
@@ -292,7 +295,7 @@
 
   <!-- Start latest course section -->
 
-  @include("includes.courses")
+  <!---->
   
   <!-- End latest course section -->
 

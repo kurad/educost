@@ -34,7 +34,11 @@
                      <div class="user_profle_side">
                         <!--<div class="user_img"><img class="img-responsive" src="{{asset('assets/2/images/layout_img/user_img.jpg')}}" alt="#" /></div>-->
                         <div class="user_info">
-                           <h6>{{ Auth::user()->first_name }} {{ Auth::user()->last_name }}</h6>
+                           <h6>
+                              @if(Auth::check())
+                              {{ Auth::user()->first_name }} {{ Auth::user()->last_name }}
+                              @endif
+                           </h6>
                            <p><span class="online_animation"></span> Online</p>
                         </div>
                      </div>
@@ -81,60 +85,6 @@
             </div>
          </div>
       </div>
-      <script src="{{asset('assets/2/js/jquery.min.js') }}"></script>
-      <script src="{{asset('assets/2/js/popper.min.js') }}"></script>
-      <script src="{{asset('assets/2/js/bootstrap.min.js') }}"></script>
-      <!-- wow animation -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
-    <script src="{{asset('assets/2/js/animate.js') }}"></script>
-      <!-- select country -->
-    <script src="{{asset('assets/2/js/bootstrap-select.js') }}"></script>
-     <!-- owl carousel -->
-    <script src="{{asset('assets/2/js/owl.carousel.js') }}"></script> 
-      <!-- chart js -->
-    <script src="{{asset('assets/2/js/Chart.min.js') }}"></script>
-    <script src="{{asset('assets/2/js/Chart.bundle.min.js') }}"></script>
-    <script src="{{asset('assets/2/js/utils.js') }}"></script>
-    <script src="{{asset('assets/2/js/analyser.js') }}"></script>
-      <!-- nice scrollbar -->
-    <script src="{{asset('assets/2/js/perfect-scrollbar.min.js') }}"></script>
-    <script>
-        var ps = new PerfectScrollbar('#sidebar');
-    </script>
-      <!-- custom js -->
-    <script src="{{asset('assets/2/js/custom.js') }}"></script>
-    <script src="{{asset('assets/2/js/chart_custom_style1.js') }}"></script>
-    <script src="{{asset('assets/js/tinymce/tinymce.min.js') }}"></script>
-   </body>
-   <script>
-      window.addEventListener('show-form', event =>{
-         $('#formLevel').modal('show');
-      })
-
-       window.addEventListener('show-form', event =>{
-         $('#formSubject').modal('show');
-      })
-
-      window.addEventListener('hide-form', event =>{
-         $('#formLevel').modal('hide');
-      })
-      window.addEventListener('hide-form', event =>{
-         $('#formSubject').modal('hide');
-      })
-   </script>
-   <script src="https://cdn.ckeditor.com/ckeditor5/33.0.0/classic/ckeditor.js"></script>
-
-   <script>
-      ClassicEditor
-      .create( document.querySelector( '#objectives' ) )
-      .then( editor => {
-        console.log( editor );
-     } )
-      .catch( error => {
-        console.error( error );
-     } );
-  </script>
+      @include("layouts.scripts")
    @livewireScripts
 </html>
